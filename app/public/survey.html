@@ -217,12 +217,12 @@
 
 
 
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" id="resultsBtn">
+       
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" id="submitBtn">
             Results
         </button>
 
-        <!-- Modal -->
+       
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -233,7 +233,9 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <!-- Append photo and name here -->
+                        <h1 id="matchIMG"></h1>
+                        <img id="matchIMG" class="img-fluid" src="">
+
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -268,14 +270,10 @@
 
     <script type="text/javascript">
         $(document).ready(function () {
-            //JavaScript test
-            console.log("I am working");
-            //Click "Results" to find match
-            $("#resultsBtn").click(function () {
-                console.log("Button clicked");
+           $("#submitBtn").click(function () {
                 var input = {
                     name: $("#name").val(),
-                    imageURL: $("#imageURL").val(),
+                    photo: $("#image").val(),
                     scores: [
                         $("#q1").val(),
                         $("#q2").val(),
@@ -289,7 +287,11 @@
                         $("#q10").val()
                     ]
                 };
-                console.log("Inputs are ", JSON.stringify(input));
+                $.post("/api/friends", input)
+                    .done(function (data) {
+                        $("#matchIMG").html(data.name);
+                        $("#matchIMG").attr("src", data.photo);
+                });
             });
         });
     </script>

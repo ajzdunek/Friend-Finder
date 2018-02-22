@@ -2,7 +2,7 @@ var musicianArr = [
     
     {
 		name: "Trent Reznor",
-		imageURL: "https://www.morrisonhotelgallery.com/images/big/NIN-Cultice-011.jpg",
+		image: "https://www.morrisonhotelgallery.com/images/big/NIN-Cultice-011.jpg",
 		scores: [
 			"3",
 			"4",
@@ -19,7 +19,7 @@ var musicianArr = [
     
     {
 		name: "Kurt Cobain",
-		imageURL: "https://static.highsnobiety.com/wp-content/uploads/2016/04/18190245/kuirt-cobain-guitar-auction-01-480x320.jpg",
+		image: "https://static.highsnobiety.com/wp-content/uploads/2016/04/18190245/kuirt-cobain-guitar-auction-01-480x320.jpg",
 		scores: [
 			"1",
 			"2",
@@ -36,7 +36,7 @@ var musicianArr = [
     
     {
 		name: "Justin Broadrick",
-		imageURL: "https://cps-static.rovicorp.com/3/JPG_400/MI0002/749/MI0002749605.jpg?partner=allrovi.jpg",
+		image: "https://cps-static.rovicorp.com/3/JPG_400/MI0002/749/MI0002749605.jpg?partner=allrovi.jpg",
 		scores: [
 			"1",
 			"1",
@@ -53,7 +53,7 @@ var musicianArr = [
 	
     {
 		name: "Steve Albini",
-		imageURL: "http://www.benzilla.com/uploads/2011/08/bbfx2.jpg",
+		image: "http://www.benzilla.com/uploads/2011/08/bbfx2.jpg",
 		scores: [
 			"1",
 			"2",
@@ -70,7 +70,7 @@ var musicianArr = [
 
     {
 		name: "Greg Sage",
-		imageURL: "https://img.discogs.com/lKbAbzFiMxbqPJEegTtnO2kv7EY=/460x348/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-257166-1306667117.jpeg.jpg",
+		image: "https://img.discogs.com/lKbAbzFiMxbqPJEegTtnO2kv7EY=/460x348/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-257166-1306667117.jpeg.jpg",
 		scores: [
 			"4",
 			"3",
