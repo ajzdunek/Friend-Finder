@@ -338,7 +338,7 @@
                         
                     ]
                 };
-                $.post("/api/friend", input)
+                $.post("/api/friends", input)
                     .done(function (data) {
                         $("#lead").html(data.name);
                         $("#leadImage").attr("src", data.image);
