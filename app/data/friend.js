@@ -13,7 +13,7 @@ var musicianArr = [
 			"4",
 			"3",
 			"2",
-			"5"
+			"5"             
 		]
     },
     
@@ -21,16 +21,16 @@ var musicianArr = [
 		name: "Kurt Cobain",
 		image: "https://static.highsnobiety.com/wp-content/uploads/2016/04/18190245/kuirt-cobain-guitar-auction-01-480x320.jpg",
 		scores: [
-			"1",
-			"2",
-			"4",
 			"3",
-			"4",
+			"3",
 			"5",
-			"2",
+			"3",
+			"4",
 			"1",
 			"3",
-			"1"
+			"3",
+			"3",
+			"3"
 		]
     },
     
@@ -38,16 +38,16 @@ var musicianArr = [
 		name: "Justin Broadrick",
 		image: "https://cps-static.rovicorp.com/3/JPG_400/MI0002/749/MI0002749605.jpg?partner=allrovi.jpg",
 		scores: [
+			"5",
+			"5",
+			"4",
+			"3",
 			"1",
+			"3",
+			"3",
 			"1",
-			"1",
-			"1",
-			"1",
-			"1",
-			"1",
-			"1",
-			"1",
-			"1"
+			"3",
+			"3"
 		]
     },
 	
