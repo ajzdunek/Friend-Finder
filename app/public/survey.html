@@ -27,6 +27,14 @@
             <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
         </div>
 
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="image">Image URL (required)</span>
+            </div>
+            <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <hr>
+
 
 
         <h3>Question 1</h3>
@@ -209,16 +217,8 @@
             </div>
         </form>
 
-
-
-
-
-
-
-
-
-       
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" id="submitBtn">
+        
+ <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" id="submitBtn">
             Results
         </button>
 
@@ -233,8 +233,8 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <h1 id="matchIMG"></h1>
-                        <img id="matchIMG" class="img-fluid" src="">
+                        <h1 id="lead"></h1>
+                        <img id="leadImage" class="img-fluid" src="">
 
                     </div>
                     <div class="modal-footer">
@@ -273,7 +273,7 @@
            $("#submitBtn").click(function () {
                 var input = {
                     name: $("#name").val(),
-                    photo: $("#image").val(),
+                    image: $("#image").val(),
                     scores: [
                         $("#q1").val(),
                         $("#q2").val(),
@@ -287,10 +287,10 @@
                         $("#q10").val()
                     ]
                 };
-                $.post("/api/friends", input)
+                $.post("/api/friend", input)
                     .done(function (data) {
-                        $("#matchIMG").html(data.name);
-                        $("#matchIMG").attr("src", data.photo);
+                        $("#lead").html(data.name);
+                        $("#leadImage").attr("src", data.image);
                 });
             });
         });
@@ -299,3 +299,4 @@
 </body>
 
 </html>
+
